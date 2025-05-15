@@ -1,0 +1,57 @@
+Collections:
+
+Any group of individual represented in single unit is known as Collections.
+The Collection interface (java.util.Collection) and Map interface (java.util.Map) are the two main “root” interfaces of Java collection classes.
+
+ArrayList:
+
+Is a part of java interface that extends List interface
+Which has the capabalities of accessing the List in the array
+We can add any number of elements in the list Their is no fixed size for this array
+We can add remove or delete using index value
+It is known as growable array
+It returns the array in insertion order
+It can contain duplicate elements also and also it can contain null values
+By default the ArrayList is non-synchronized and can access by any threads
+
+Iterator:
+An Iterator is an interface that enables traversal through the elements of a collection like ArrayList,LinkedList
+
+Foreach loop:
+
+the other way of accessing the elements we can use for each loop 
+It is simple but we cannot able to get the elements using index
+
+InterThread Communication:
+
+The interThread communication is a way in which one thread can hold the process until the next process need to be completed
+eg: Money withdraw and deposit
+The wait() and notify()  plays a major role in InterThread communication
+The wait() is used to hold the process until the other thread finish the works 
+The notify() is used to release the lock of the wait() 
+This is more efficient and resources can be managed and coordination of Thread to acheive the commom goal
+
+String Constant Pool:
+It is a separate place in the heap memory where the values of all the strings which are defined in the program are stored
+
+String by Literal:
+The String by literal creates an instance for the values
+Eg: String str="Welcome"
+here the str is the instances that points the value welcome in the heap memory
+
+String by Using Object:
+The java String is created using new keyword which creates two objects in String pool and heap memory
+
+String: 
+Immutable, meaning its value cannot be changed once created. 
+It is thread-safe but less memory-efficient.
+
+StringBuilder: 
+Mutable, not thread-safe, and more memory-efficient compared to String. 
+Best used for single-threaded operations.
+
+StringBuffer: 
+Mutable and thread-safe due to synchronization, but less efficient than StringBuilder in terms of performance.
+
+intern():
+It is a method using to used to change the value from the heap memory to the String constant Pool
