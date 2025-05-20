@@ -1,0 +1,19 @@
+int x=1000;
+  int y=500;
+  print("Sum of ${x} and ${y} is ${x+y}");
+  print("Difference of ${x} and ${y} is ${x-y}");
+  print("Multiplication of ${x} and ${y} is ${x*y}");
+  print("Division of ${x} and ${y} is ${x/y}");
+  print("Division of ${x} and ${y} is ${x~/y}");
+  print("Remainder of ${x} and ${y} is ${x%y}");
+  
+  print("if ${x} less than ${y} is ${x<y}");
+   print("if ${x} less than or equal to ${y} is ${x<=y}");
+   print("if ${x} greater than ${y} is ${x>y}");
+   print("if ${x} greater than or equal to ${y} is ${x>=y}");
+   print("if ${x} equal to ${y} is ${x==y}");
+  print("if ${x} not equal to ${y} is ${x!=y}");
+  
+  print((x>y) && (x<=y));
+  print((x<y) || (x!=y));
+  print(!(x==y));

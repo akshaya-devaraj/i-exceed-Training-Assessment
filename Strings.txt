@@ -1,0 +1,27 @@
+String str1="Welcome";
+ print("${str1} to i-exceed");
+ 
+  
+ String str2="to Bengaluru";
+  print(str1+str2);
+  
+  // isEmpty method
+  print(str1.isEmpty);
+  
+  //isNotEmpty
+  print(str2.isNotEmpty);
+  
+  //hashCode
+  print(str1.hashCode);
+  
+  //length
+  print(str1.length);
+  
+  //compareTo function
+  print(str1.compareTo(str2));
+  
+  //startsWith
+  print(str1.startsWith("w"));
+  //endsWith
+  print(str1.endsWith("e"));
+  

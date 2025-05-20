@@ -1,0 +1,88 @@
+void main() {
+  int x = 10;
+  print(x);
+  print(x.runtimeType);
+
+  String str = "Dart Programming";
+  print(str);
+  print(str.runtimeType);
+
+  double value = 123.45;
+  print(value);
+  print(value.runtimeType);
+
+  var y = 100;
+  print(y);
+  print(y.runtimeType);
+
+  var str1 = "Flutter";
+  print(str1);
+  print(str1.runtimeType);
+
+  dynamic value1 = 123;
+  print(value1);
+  print(value1.runtimeType);
+
+  value1 = "welcome";
+  print(value1);
+  print(value1.runtimeType);
+  
+  value1=false;
+  print(value1);
+  print(value1.runtimeType);
+  
+  value1=145.990;
+  print(value1);
+  print(value1.runtimeType);
+
+  num value2 = 100;
+  print(value2);
+  print(value2.runtimeType);
+
+  num value3 = 100.788;
+  print(value3);
+  print(value3.runtimeType);
+
+  bool b = true;
+  print(b);
+  print(b.runtimeType);
+  
+  void main() {
+  int x=10;
+  print(x);
+  print(x.runtimeType);
+  
+  String str="Dart Programming";
+  print(str);
+  print(str.runtimeType);
+  
+  double value=123.45;
+  print(value);
+  print(value.runtimeType);
+  
+  var y=100;
+  print(y);
+  print(y.runtimeType);
+  
+  var str1="Flutter";
+  print(str1);
+  print(str1.runtimeType);
+  
+  dynamic value1=123;
+  print(value1);
+  print(value1.runtimeType);
+  
+  value1="welcome";
+  print(value1);
+  print(value1.runtimeType);
+  
+  num value2=100;
+  print(value2);
+  print(value2.runtimeType);
+  
+  num value3=100.788;
+  print(value3);
+  print(value3.runtimeType);
+}
+
+}
