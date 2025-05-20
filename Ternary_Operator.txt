@@ -1,4 +1,0 @@
-int x=100;
-  int y=100;
-  print(x>=y ? "Yes":"No");
-  
