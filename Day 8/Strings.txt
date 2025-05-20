@@ -1,4 +1,6 @@
-String str1="Welcome";
+void main() {
+ 
+ String str1="   Welcome  ";
  print("${str1} to i-exceed");
  
   
@@ -22,6 +24,26 @@ String str1="Welcome";
   
   //startsWith
   print(str1.startsWith("w"));
+  
   //endsWith
   print(str1.endsWith("e"));
   
+  //contains
+  print(str2.contains(str1));
+  
+  //replaceAll
+  print(str2.replaceAll("e","a"));
+  
+  //trimLeft
+  print(str1.trimLeft());
+  
+  //trimRight
+  print(str1.trimRight());
+  
+  //split
+  print(str1.split(" "));
+  
+  //substring
+  print(str2.substring(5));
+}
+
