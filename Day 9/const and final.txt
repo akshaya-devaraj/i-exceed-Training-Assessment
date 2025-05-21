@@ -1,0 +1,7 @@
+double r=4;
+  const pie=3.14;
+  double area=0.5*pie*r*r;
+  print(area);
+  
+  final time=DateTime.now();
+  print(time);
