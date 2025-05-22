@@ -1,0 +1,142 @@
+// assign function to a variable
+
+void main() {
+  
+  var s=display("Hello");
+  print(s);
+  var s1=calc(2,7);
+  print(s1);
+}
+
+String display(String str)
+{
+  return str;
+}
+
+int calc(int x,int y)
+{
+  return x+y;
+}
+
+
+//return function as argument for another function
+
+void main() {
+  
+  var res=result(display,"Hello");
+  print(res);
+  
+  var output=result2(calc);
+  print(output);
+  
+}
+
+String display(String str)
+{
+  return str;
+}
+
+
+int calc(int x,int y)
+{
+  return x+y;
+}
+
+
+String result(Function display,String s)
+{
+   return display(s);
+}
+
+int result2(Function calc)
+{
+  return calc(10,20);
+}
+
+// return function to another function
+
+void main() {
+  
+  var s=output();
+  print(s("Hello"));
+  
+  var res=calculation();
+  print(res(10,20));
+  
+}
+
+Function result()
+{
+  String output(String s)
+  {
+  return s;
+  }
+  return output;
+}
+
+Function output()
+{
+   return result();
+}
+
+int cal(int a,int b)
+{
+  return a+b;
+}
+
+Function calculation()
+{
+  return cal;
+}
+
+// Afternoon session
+
+
+void main() {
+  
+  var res1=fun1(10,20);
+  print(res1);
+  
+  var res2=fun2(100,899);
+  print(res2);
+  
+  var res3=fun3(1000,8000);
+  print(res3);
+  
+  var res4=fun4(fun2,1000,1200);
+  print(res4);
+  
+  (x){
+    print(x.toUpperCase());
+  }("welcome");
+  
+  
+  var res5=result("WELCOME");
+  print(res5);
+}
+
+//normal named function
+int fun1(int x,int y)
+{
+  return x*y;
+}
+
+//closed function
+var fun2=(int x,int y)
+{
+  return x*y;
+};
+
+//Anonymus function
+var fun3 = (int x, int y) => x*y;
+
+//Higher order function
+
+int fun4 (Function fn,int x,int y)
+{
+  return fn(x,y);
+}
+
+var result=(x){
+  return (x.toLowerCase());
+};

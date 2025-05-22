@@ -1,0 +1,40 @@
+Shared mutable state
+
+programming has two ways impertive and decalarative
+impertive focus on how and declarative focus on what 
+
+Why functional programming
+It is declarative in nature.
+
+1.Immutability & Pure Functions-Functional programming avoids side effects by using pure functions (same input → same output).
+Makes code predictable, testable, and easier to debug.
+
+2. Easier Parallel & Concurrent Programming-Since functions don’t modify shared state, it’s easier to write safe multi-threaded or concurrent programs.
+
+3. Higher-Order Functions Enable Code Reuse-Functions can be passed as arguments and returned from other functions, encouraging modularity and code reuse.
+
+4. Declarative Style Improves Readability-Focuses on what to do rather than how to do it, leading to more concise and readable code.
+
+Functional Programming is known as first-class-citizen
+
+the functions can be assigned to a variable
+return function as argument for another function
+return function from other function
+
+positional function:
+These are function parameters that must be passed in the exact order they're defined.
+
+Named function:
+Parameters that are passed by name, not by position. Useful for readability and optional arguments.
+
+Anonymous Function:
+Functions without a name. Often used as arguments or for callbacks.
+
+closure funtions:
+Closures are functions that capture variables from their outer scope, even after the outer function has finished execution.
+
+Higher order Function:
+Functions that take other functions as parameters, or return functions.
+
+if a function takes zero parameters nullary
+if a function takes one parameters unary
