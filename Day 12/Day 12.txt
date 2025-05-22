@@ -1,0 +1,31 @@
+OOPS classes and objects:
+
+The dart programming supports both the functional and object oriented programming 
+It is used according to the paradigm which means it is the mindset of the developer.
+
+class consists of 4 componenets:
+
+1.Class varaiables of instance varaiables which is declared above the constructor or methods
+
+2.Constructor - The constructor allocates the memory to the object 
+
+3.Methods - the methods can be used and can be altered according to the needed 
+
+4.objects - It plays a major role in calling the class Which is used to access the methods and varaiables of the classes
+
+The _ is used declare the varaiables as private and known as convertion of public to private.
+In this the varaiables can be accessed within the library and not within the class.
+
+The getters and setters are used to acheive Encapsulation
+The get keyword is used in the getter function to avoid the function 
+
+Constructor:
+
+The constructor is used to allocate memory to the object.
+The parameterized constructor cannot be passed in dart similar like java
+
+The named constructor is used to pass the values with parameter
+
+The extension:
+the extension keyword is used to extend without the class
+we can able to perform without the extensionClass name

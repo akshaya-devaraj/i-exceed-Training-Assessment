@@ -1,0 +1,57 @@
+//sample1
+
+void main() {
+  Details d=Details();
+  print(d);
+  d.displayDetails();
+}
+
+class Details
+{
+  String? name;
+  int? age;
+  String? designation;
+  
+  Details()
+  {
+    name="Akshaya";
+    age=21;
+    designation="Trainee";
+  }
+  
+  void displayDetails()
+  {
+    print("Name: $name");
+    print("Age: $age");
+    print("Designation: $designation");
+  }
+}
+
+//sample2
+
+void main() {
+  Details d=Details();
+  print(d);
+  d.displayDetails("Akshaya",21,"Trainee");
+}
+
+class Details
+{
+  String? name;
+  int? age;
+  String? designation;
+  
+  Details()
+  {
+    name;
+    age;
+    designation;
+  }
+  
+  void displayDetails(String name,int age,String designation)
+  {
+    print("Name: $name");
+    print("Age: $age");
+    print("Designation: $designation");
+  }
+}
