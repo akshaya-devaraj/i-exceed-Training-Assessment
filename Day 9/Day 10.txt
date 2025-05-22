@@ -1,0 +1,42 @@
+The dart program use to type of compiler to run the code
+Just In Time Complier(JIT) is used for faster compilation
+The Ahead-Of-Time(AOT) compiler is used for compliation during the depolyment of the entire program
+
+const:
+
+The const keyword is known as compile time constant that can be retained throughout the program
+It can be acheived during the compile time
+
+final:
+The final keyword is executed during the run-time operations
+These can be used in both compile time and run time
+
+`const`: Used for creating compile-time constants, which are evaluated and determined at compile time. 
+`const` values must be known at compile time and cannot change during runtime.
+`final`: Used for runtime constants, meaning they are assigned a value at runtime but cannot be changed after that point during program execution.
+
+Functions:
+
+1. Positional Parameters:
+      
+	  It represent the passing the values to the parameters.
+	  It needs only passing the values to the function.
+	   
+
+2. Named parameters:
+
+       The named parameter in which the arguments are passed with names that are used according to the scenario
+	   
+	   
+3. Named with default parameter:
+
+       The named with default parameter contains the arguments are passed and we can able to provide them with default value
+	   
+4. Named with required parameter:
+    
+	    The required Keyword is passed so that it necessary to pass the argument
+		
+5. Optional position parameter:
+
+        The specific block must be enclosed with the square bracket
+		The default parameters can be passed 

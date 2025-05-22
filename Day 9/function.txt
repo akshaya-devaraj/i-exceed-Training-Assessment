@@ -1,0 +1,38 @@
+void main() {
+  
+ result("Akshaya",21,"cbe");
+ result1(name:"Akshaya",age:21,city:"cbe");
+ result2(name:"Akshaya",age:21);
+  result3(name:"Akshaya",age:21,city:"cbe");
+  result4("Akshaya",21);
+}
+
+//positional Parameter
+void result(String name,int age,String city)
+{
+    print("Hello $name who is $age old from $city");
+}
+
+//Named parameter
+void result1({String? name,int? age,String? city})
+{
+  print("Hello $name who is $age old from $city");
+}
+
+//Default parameter
+void result2({String? name,int? age,String? city="bangalore"})
+{
+  print("Hello $name who is $age old from $city");
+}
+
+//Required parameter
+void result3({required String name,int? age,String? city})
+{
+  print("Hello $name who is $age old from $city");
+}
+
+//optional position 
+void result4(String name,int age,[String city="bangalore"])
+{
+  print("Hello $name who is $age old from $city");
+}
