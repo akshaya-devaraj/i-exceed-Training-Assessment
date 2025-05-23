@@ -1,0 +1,89 @@
+//sample 1 getter and setter
+
+void main() {
+  Student s=Student();
+  s.setName("Akshaya");
+  s.setAge(21);
+  s.setDept("Trainee");
+ print(s.getName());
+  print(s.getAge());
+  print(s.getDept());
+  
+}
+
+class Student
+{
+   String? _name;
+   int? _age;
+  String? _dept;
+  
+  void setName(String name)
+  {
+    this._name=name;
+  }
+  void setAge(int age)
+  {
+    this._age=age;
+  }
+  void setDept(String dept)
+  {
+    this._dept=dept;
+  }
+  String getName()
+  {
+    return _name ?? "";
+  }
+  int getAge()
+  {
+    return _age ?? 0;
+  }
+  String getDept()
+  {
+    return _dept ?? "";
+  }
+  
+}
+
+
+//sample 2 getter and setter using arrow function
+
+void main() {
+  Student s=Student();
+  s.setName("Akshaya");
+  s.setAge(21);
+  s.setDept("Trainee");
+ print(s.getName);
+  print(s.getAge);
+  print(s.getDept);
+  
+}
+
+class Student
+{
+   String? _name;
+   int? _age;
+  String? _dept;
+  
+  void setName(String name)
+  {
+    this._name=name;
+  }
+  void setAge(int age)
+  {
+    this._age=age;
+  }
+  void setDept(String dept)
+  {
+    this._dept=dept;
+  }
+  
+  // arrow function with get keyword
+  
+  String get getName=> _name ?? ""; //  ??  Null aware operator
+ 
+  int get getAge=> _age ?? 0;
+  
+  String get getDept=> _dept ?? "";
+
+  
+}

@@ -1,0 +1,152 @@
+// sample 1 named and default constructor
+void main() {
+  
+  Student s=Student();
+  
+  Student.display("Akshaya",21);
+}
+class Student
+{
+  String?name;
+  int?age;
+  
+  //default constructor
+    Student()
+    {
+      print("default constructor");
+    }
+  
+  //named constructor
+    Student.display(String name,int age)
+    {
+      this.name=name;
+      this.age=age;
+    
+      print(name);
+      print(age);
+      
+    }
+}
+
+//sample 2 with private variables
+
+void main() {
+  
+  Student s=Student();
+  
+  Student.display("Akshaya",21);
+}
+class Student
+{
+  String? _name;
+  int? _age;
+  
+  //default constructor
+    Student()
+    {
+      print("default constructor");
+    }
+  
+  //named constructor
+    Student.display(String name,int age)
+    {
+      this._name=name;
+      this._age=age;
+    
+      print(name);
+      print(age);
+      
+    }
+}
+
+//sample 3 to add
+
+void main() {
+  Add a=Add();
+  Add.display(20,10);
+ 
+}
+class Add
+{
+  int?x;
+  int?y;
+  Add()
+  {
+    print("Addition operation is done");
+  }
+  Add.display(int x,int y)
+  {
+    print(x+y);
+  }
+  
+}
+
+//sample 4 using private variable
+void main() {
+  Add a = Add();
+  Add.display(20, 1000);
+}
+
+class Add {
+  int? _x;
+  int? _y;
+  Add() {
+    print("Addition operation is done");
+  }
+  Add.display(int x, int y) {
+    this._x = x;
+    this._y = y;
+    print(x + y);
+  }
+}
+
+// sample 5 uisng without this keyword
+
+void main() {
+   Add();
+  Add.display(20, 1000);
+}
+
+class Add {
+  int? _x;
+  int? _y;
+  
+  // default constructor
+  
+  Add() {
+    print("Addition operation is done");
+  }
+  
+  //Named construtor
+  
+  Add.display(int _x,int _y)
+  {   
+    print(_x+_y);
+  }
+}
+
+// sample 6 using without initializing instance variable
+
+void main() {
+   Add();
+  Add.display(20, 1000);
+}
+
+class Add {
+ //nt? _x;
+ //nt? _y;
+  
+  // default constructor
+  
+  Add() {
+    print("Addition operation is done");
+  }
+  
+  //Named construtor
+  
+  Add.display(int _x,int _y)
+  {   
+    print(_x+_y);
+  }
+}
+

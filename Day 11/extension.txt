@@ -1,0 +1,73 @@
+// extension keyword with userDefined 
+
+void main() {
+  Student s=Student("Akshaya",21,"trainee");
+  s.display();
+  print(s.extend());
+  
+}
+
+class Student
+{
+  String? name;
+  int? age;
+  String? dept;
+  
+  Student(String name,int age,String dept)
+  {
+    this.name=name;
+    this.age=age;
+    this.dept=dept;
+  }
+   void display()
+   {
+     print("${this.name} who is ${this.age} old from ${this.dept}");
+   }
+}
+
+extension Call on Student
+{
+  String extend()
+  {
+     return "Lives in coimbatore";  
+  }
+}
+
+//extension keyword with predefined
+
+void main() {
+  Student s = Student("Akshaya", 21, "trainee");
+  s.display();
+  print(s.extend());
+  String str = "";
+  print(str.tr("  WElcome  "));
+}
+
+class Student {
+  String? name;
+  int? age;
+  String? dept;
+
+  Student(String name, int age, String dept) {
+    this.name = name;
+    this.age = age;
+    this.dept = dept;
+  }
+  void display() {
+    print("${this.name} who is ${this.age} old from ${this.dept}");
+  }
+}
+
+extension Call on Student {
+  String extend() {
+    return "Lives in coimbatore";
+  }
+}
+
+extension NewCall on String? {
+  String tr(String str) {
+    return str.trim();
+  }
+}
+
+ 
