@@ -1,0 +1,44 @@
+// sample 1 way of respresenting parameterized constructor 
+
+void main() {
+  
+  Account a=Account(12345678,12988777);
+  a.display();
+}
+class Account
+{
+  int? accno;
+  double? balance;
+  
+  Account(this.accno,this.balance);
+  
+  void display()
+  {
+  print("The Acc No is ${this.accno} holds ${balance}");  
+  }
+}
+
+// sample 2 way of representing paramterized constructor with named parameters 
+
+void main() {
+  
+  Account a=Account(accno:12345678,balance:12988777);
+  a.display();
+}
+class Account
+{
+  int? accno;
+  double? balance;
+  
+  Account(
+    {
+      this.accno,
+      this.balance
+      });
+  
+  void display()
+  {
+  print("The Acc No is ${this.accno} holds ${balance}");  
+  }
+}
+
