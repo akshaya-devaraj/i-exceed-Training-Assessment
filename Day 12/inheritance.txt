@@ -1,0 +1,49 @@
+// sample 1 basic inheritance
+
+
+void main() {
+  
+  Salary s=Salary("Akshaya",21,"Trainee",50000);
+  s.displayEmployee();
+  s.displaySalary();
+}
+class Employee
+{
+  String? name;
+  int? age;
+  String? dept;
+ 
+  //parameterized constructor
+  
+  Employee(String? name,int? age,String? dept)
+  {
+    this.name=name;
+    this.age=age;
+    this.dept=dept;
+  }
+  
+  void displayEmployee()
+  {
+    print("${name} ${age} ${dept}");
+  }
+}
+
+class Salary extends Employee
+{
+   int? salary;
+  
+  // derived class Calling the super class 
+  
+  Salary(String name,int age,String dept,int salary):super(name,age,dept)
+  {
+     this.salary=salary;
+  }
+   void displaySalary()
+   {
+     print(salary);
+   }
+}
+
+
+
+

@@ -1,0 +1,58 @@
+// sample 2 multilevel inheritance with parameterized constructor
+
+void main() {
+  
+  Certificate c=Certificate("Akshaya",21,"Trainee",120000,"Aws cloud");
+  c.displayEmployee();
+  c.displaySalary();
+  c.displayCertificate();
+}
+class Employee
+{
+  String? name;
+  int? age;
+  String? dept;
+ 
+  //parameterized constructor
+  
+  Employee(String? name,int? age,String? dept)
+  {
+    this.name=name;
+    this.age=age;
+    this.dept=dept;
+  }
+  
+  void displayEmployee()
+  {
+    print("${name} ${age} ${dept}");
+  }
+}
+
+class Salary extends Employee
+{
+   int? salary;
+  
+  // derived class Calling the super class 
+  
+  Salary(String? name,int? age,String? dept,int? salary):super(name,age,dept)
+  {
+     this.salary=salary;
+  }
+   void displaySalary()
+   {
+     print(salary);
+   }
+}
+
+class Certificate extends Salary
+{
+   String? certi;
+   Certificate(String? name,int? age,String? dept,int? salary,String? certi):super(name,age,dept,salary)
+   {
+     this.certi=certi;
+   }
+  void displayCertificate()
+  {
+    print(certi);
+  }
+}

@@ -1,0 +1,57 @@
+void main() {
+  
+  Certificate c=Certificate(name:"Akshaya",age:21,dept:"Trainee",salary:120000,certi:"Aws cloud");
+  c.displayEmployee();
+  c.displaySalary();
+  c.displayCertificate();
+}
+class Employee
+{
+  String? name;
+  int? age;
+  String? dept;
+ 
+  //parameterized constructor
+  
+  Employee(String? name,int? age,String? dept)
+  {
+    this.name=name;
+    this.age=age;
+    this.dept=dept;
+  }
+  
+  void displayEmployee()
+  {
+    print("${name} ${age} ${dept}");
+  }
+}
+
+class Salary extends Employee
+{
+   int? salary;
+  
+  // derived class Calling the super class 
+  
+  Salary(String? name,int? age,String? dept,int? salary):super(name,age,dept)
+  {
+     this.salary=salary;
+  }
+   void displaySalary()
+   {
+     print(salary);
+   }
+}
+
+class Certificate extends Salary
+{
+   String? certi;
+   Certificate({ required String? name, required int? age,required String? dept,required int? salary,required String? certi}):super(name,age,dept,salary)
+   {
+     this.certi=certi;
+   }
+  void displayCertificate()
+  {
+    print(certi);
+  }
+  
+}
