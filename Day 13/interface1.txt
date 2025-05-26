@@ -1,0 +1,31 @@
+import 'dart:math' show pi;
+void main() {
+  
+  Circle c=Circle();
+  c.area(12);
+  c.perimeter(12);
+  
+  
+}
+
+abstract class Shape
+{
+  void area(double radius);  
+  void perimeter(double radius);
+    
+}
+class Circle implements Shape
+{
+  double? radius;
+  void area(double radius)
+  {
+    this.radius=radius;
+    print(pi*radius*radius);
+  }
+  
+  void perimeter(double radius)
+  {
+    this.radius=radius;
+    print(2*pi*radius);
+  }
+}

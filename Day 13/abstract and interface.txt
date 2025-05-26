@@ -1,0 +1,65 @@
+import 'dart:math' show pi;
+
+void main() {
+  Displaying d = Displaying();
+  final Circle c = Circle();
+  final Semicircle s = Semicircle();
+  d.area(c);
+  d.perimeter(s);
+}
+
+abstract class Shape {
+  void area(double radius);
+  void perimeter(double radius);
+}
+
+abstract class Details {
+  void display();
+}
+
+class Circle extends Shape implements Details {
+  double? radius;
+  void display() {
+    print("The area and perimeter of the circle is :");
+  }
+
+  void area(double radius) {
+    this.radius = radius;
+    print(pi * radius * radius);
+  }
+
+  void perimeter(double radius) {
+    this.radius = radius;
+    print(2 * pi * radius);
+  }
+}
+
+class Semicircle extends Shape implements Details {
+  double? radius;
+  void display() {
+    print("The area and perimeter of the semicircle is :");
+  }
+
+  void area(double radius) {
+    this.radius = radius;
+    print((pi * radius * radius) / 2);
+  }
+
+  void perimeter(double radius) {
+    this.radius = radius;
+    print((pi * radius) + 2 * radius);
+  }
+}
+
+class Displaying {
+  double? radius;
+  void area(Circle ci) {
+    ci.display();
+    ci.area(12);
+  }
+
+  void perimeter(Semicircle sc) {
+    sc.display();
+    sc.perimeter(19);
+  }
+}

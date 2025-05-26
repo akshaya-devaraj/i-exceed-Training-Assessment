@@ -1,0 +1,60 @@
+// Abstraction in dart
+
+void main() {
+  
+  Dog d=Dog();
+  d.display();
+  d.sound("Barking");
+  
+   Cat c=Cat();
+   c.display();
+   c.sound("Meow");
+ 
+}
+
+abstract class Animal
+{
+  void display()
+  {
+    print("The sound of the given Animal: ");
+  }
+  void sound(String str);
+}
+
+class Dog extends Animal
+{
+  String? str;
+  
+
+  void display()
+  {
+    super.display();
+  }
+  
+  @override
+  void sound(String str)
+  {
+    this.str=str;
+    print(str);
+  }
+}
+
+class Cat extends Animal
+{
+  String? str;
+  
+ 
+  void display()
+  {
+    super.display();
+  }
+  
+  @override
+  void sound(String str)
+  {
+    this.str=str;
+    print(str);
+  }
+  
+}
+

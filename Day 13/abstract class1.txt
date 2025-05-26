@@ -1,0 +1,36 @@
+void main() {
+  Withdraw w = Withdraw();
+  w.display(10000);
+
+  Deposit d = Deposit();
+  d.display(2000);
+}
+
+abstract class Bank {
+  dynamic balance = 100000;
+  void display(double balance);
+}
+
+class Withdraw extends Bank {
+  double? bal;
+  Withdraw() {
+    print("The amount with draw from the account: ");
+  }
+  void display(double balance) {
+    this.bal = balance;
+    dynamic amt = this.balance - balance;
+    print(amt);
+  }
+}
+
+class Deposit extends Bank {
+  double? bal;
+  Deposit() {
+    print("The amount deposited to the account: ");
+  }
+  void display(double balance) {
+    this.bal = balance;
+    dynamic amt = this.balance + balance;
+    print(amt);
+  }
+}
