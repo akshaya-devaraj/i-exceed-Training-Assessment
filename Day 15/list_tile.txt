@@ -1,0 +1,66 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(scaffoldBackgroundColor: Colors.white),
+      home: Scaffold(appBar: AppBar(
+        title: Text("List-Tile view"),
+        centerTitle: true,
+        backgroundColor: Colors.purple,
+        foregroundColor: Colors.black,
+      ),
+          body: ListView(children: [
+          ListTile(
+          leading: Icon(Icons.person),
+          title: Text("Akshaya"),
+          subtitle: Text("Flutter Developer"),
+          trailing: Icon(Icons.verified),
+          iconColor: Colors.red,
+          contentPadding: EdgeInsets.all(10.0),
+          horizontalTitleGap: 20.0,
+            selected: true,
+            selectedTileColor: Colors.grey,
+        ),
+        Divider(
+          thickness: 1,
+          color: Colors.black38,
+        ),
+          ListTile(
+          leading: Icon(CupertinoIcons.person),
+          title: Text("Dart Programmer"),
+          subtitle: Text("i-exceed"),
+          trailing: Icon(Icons.verified),
+          contentPadding: EdgeInsets.all(5.0),
+          iconColor: Colors.blueAccent,
+        ),
+          Divider(
+            thickness: 3,
+            color: Colors.black38,
+          ),
+          ListTile(
+            leading: Icon(CupertinoIcons.person),
+            title: Text("Java Programmer"),
+            subtitle: Text("i-exceed"),
+            trailing: Icon(Icons.verified),
+            contentPadding: EdgeInsets.all(5.0),
+            horizontalTitleGap: 20.0,
+
+            iconColor: Colors.blueAccent,
+
+          )
+        ],)
+
+      ),
+    );
+  }
+}
