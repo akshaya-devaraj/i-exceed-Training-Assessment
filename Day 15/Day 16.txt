@@ -1,0 +1,36 @@
+List-Tile:
+
+The ListTile widget is used to create a standardized row layout.
+
+Basic operations:
+
+| Property   | Type     | Description                                                                                   |
+| ---------- | -------- | --------------------------------------------------------------------------------------------- |
+| `leading`  | `Widget` | A widget (usually an `Icon` or `CircleAvatar`) displayed at the **start** (left) of the tile. |
+| `title`    | `Widget` | The **main content** (typically `Text`) of the tile.                                          |
+| `subtitle` | `Widget` | A widget displayed **below the title**, often used for additional info.                       |
+| `trailing` | `Widget` | A widget displayed at the **end** (right) of the tile, like an icon or switch.                |
+
+Styling and layout:
+
+| Property             | Type            | Description                                           |
+| -------------------- | --------------- | ----------------------------------------------------- |
+| `isThreeLine`        | `bool`          | If `true`, allows the subtitle to span **two lines**. |
+| `dense`              | `bool`          | Reduces the vertical padding for a more compact tile. |
+| `contentPadding`     | `EdgeInsets`    | Sets the **padding** around the tile’s content.       |
+| `visualDensity`      | `VisualDensity` | Controls **vertical and horizontal spacing**.         |
+| `horizontalTitleGap` | `double`        | Horizontal gap between `leading` and `title`.         |
+| `minVerticalPadding` | `double`        | Minimum vertical padding inside the tile.             |
+| `minLeadingWidth`    | `double`        | Minimum width allocated for the `leading` widget.     |
+| `tileColor`          | `Color`         | Background color of the tile.                         |
+| `selectedTileColor`  | `Color`         | Tile background color when the tile is selected.      |
+
+
+Behavioural:
+
+| Property      | Type       | Description                                 |
+| ------------- | ---------- | ------------------------------------------- |
+| `onTap`       | `Function` | Callback when the tile is **tapped**.       |
+| `onLongPress` | `Function` | Callback when the tile is **long-pressed**. |
+| `enabled`     | `bool`     | If `false`, disables interactions.          |
+| `selected`    | `bool`     | Whether the tile is currently selected.     |
