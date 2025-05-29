@@ -1,0 +1,27 @@
+Flutter :
+
+Flutter is an open-source UI software development kit created by Google, used for building mobile, web, and desktop applications from a single codebase.
+It allows developers to create visually appealing and high-performance applications for multiple platforms
+including iOS and Android, using the Dart programming language. 
+
+Features:
+
+Cross-platform development:
+Flutter allows developers to build applications for multiple platforms (mobile, web, desktop) using the same code, saving time and effort. 
+
+Natively compiled:
+Flutter compiles application code to ARM or Intel machine code, providing native performance. 
+
+Declarative UI:
+Flutter uses a declarative UI approach, where the UI is defined based on data, making it easier to manage and update. 
+
+Widget-based:
+Flutter provides a rich set of pre-designed widgets, which are building blocks of UI, making it easy to create complex user interfaces. 
+
+Hot reload:
+Flutter's hot reload feature allows developers to see changes in their app instantly as they code, speeding up development. 
+
+Dart programming language:
+Flutter is powered by the Dart programming language, which is known for its simplicity and ease of use. 
+
+
