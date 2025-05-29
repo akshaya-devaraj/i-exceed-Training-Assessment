@@ -1,0 +1,53 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_first_project/Details.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(appBar:
+      AppBar(
+        title: Text("Account"),
+        centerTitle: true,
+        toolbarHeight: 50,
+        backgroundColor: Colors.purpleAccent,
+        foregroundColor: Colors.black,
+
+      ),
+        drawer: Icon(Icons.menu),
+        body: ListView.builder(
+            itemCount: banks.length,
+            itemBuilder: (BuildContext context,int index){
+              return Column(
+                children: [
+                  ListTile(
+                    leading: Image.asset(banks[index].logo),
+                    title: Text(banks[index].name) ,
+                    subtitle: Text(banks[index].branch),
+                    trailing: Icon(Icons.menu),
+                    minLeadingWidth: 100,
+
+
+                  ),
+                  Divider(
+                    height: 1,
+                    thickness: 1,
+                  )
+                ],
+              );
+            }
+
+        ),
+
+      ),
+    );
+  }
+}

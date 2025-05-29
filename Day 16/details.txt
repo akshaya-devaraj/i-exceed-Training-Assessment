@@ -1,0 +1,40 @@
+class Bank
+{
+   String? name;
+   String? branch;
+   String? logo;
+
+   Bank({this.name,this.branch,this.logo});
+}
+List banks = [
+   Bank(
+      name: "State Bank of India",
+      branch: "MG Road Branch",
+      logo:"assets/images/sbi logo.png",
+
+   ),
+   Bank(
+      name: "HDFC Bank",
+      branch: "Indiranagar Branch",
+      logo:"assets/images/hdfc logo.jpeg",
+
+   ),
+   Bank(
+      name: "ICICI Bank",
+      branch: "T Nagar Branch",
+      logo:"assets/images/icici logo.png",
+
+   ),
+   Bank(
+      name: "Axis Bank",
+      branch: "Gachibowli Branch",
+      logo:"assets/images/axis logo.png",
+
+   ),
+   Bank(
+      name: "Bank of Baroda",
+      branch: "Andheri West Branch",
+      logo:"assets/images/bank of baroda.png",
+
+   ),
+];
