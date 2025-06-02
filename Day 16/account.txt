@@ -1,0 +1,35 @@
+class Account
+{
+  String? name;
+  String? image;
+
+  Account({this.name,this.image});
+}
+List obj=[
+
+  Account(
+    name:"Home",
+    image:"assets/logo/home.png",
+  ),
+  Account(
+      name:"Pay",
+      image:"assets/logo/pay.png",
+  ),
+  Account(
+      name:"Save",
+      image:"assets/logo/save.png",
+  ),
+  Account(
+      name:"Loan",
+      image:"assets/logo/loan.png",
+  ),
+  Account(
+      name:"Invest",
+      image:"assets/logo/investment.jpeg",
+  ),
+  Account(
+      name:"Offers",
+      image:"assets/logo/offer.png",
+  )
+
+];

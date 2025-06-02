@@ -1,0 +1,57 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_first_project/account.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(appBar: AppBar(
+      title: Text("My Account"),
+      toolbarHeight: 80.0,
+      backgroundColor: Colors.cyan,
+      foregroundColor: Colors.black,
+      centerTitle: true,
+    ),
+   drawer: Icon(Icons.menu),
+    body: callseparated(
+    )
+    ),
+    );
+  }
+}
+
+class callseparated extends StatelessWidget {
+  const callseparated({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView.separated(itemCount: obj.length,
+      physics: BouncingScrollPhysics(),
+      itemBuilder: (BuildContext context,int index)
+        {
+          print("ListTile is printed $index");
+
+            return  ListTile(
+              leading: CircleAvatar(child: Image.asset(obj[index].image),),
+              title: Text(obj[index].name),
+              trailing: Icon(Icons.more_vert),
+              minLeadingWidth: 50,
+              minTileHeight: 80,
+            );
+        },
+        separatorBuilder: (BuildContext context,int index)
+        {
+            return Divider(height:1,
+            thickness: 3,);
+        }, );
+  }
+}
+
