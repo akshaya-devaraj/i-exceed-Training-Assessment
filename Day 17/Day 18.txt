@@ -1,0 +1,60 @@
+Expanded Widget:
+
+A widget that expands a child of a Row, Column, or Flex so that the child fills the available space.
+
+Using an Expanded widget makes a child of a Row, Column, or Flex expand to fill the available space along the main axis.
+If multiple children are expanded, the available space is divided among them according to the flex factor.
+
+Default the flex value is 1.
+
+The expanded widget can be a child or row,column and flex in stateless or stateful widget.
+
+
+RenderFlexOverFlow:
+
+It occurs when it exceeds the space available resulting in the overflow
+It can be rectified using Expanding
+
+Horizontal overflow can be adjusted using Expanded
+
+Text
+
+Basic Text properties:
+
+| Property              | Description                                                     | Example                   |
+| --------------------- | --------------------------------------------------------------- | ------------------------- |
+| **`data`**            | The actual string/text you want to display.                     | `'Hello, World!'`         |
+| **`style`**           | Allows you to customize appearance like color, size, font, etc. | `TextStyle(fontSize: 18)` |
+| **`textAlign`**       | Aligns text horizontally inside its container.                  | `TextAlign.center`        |
+| **`maxLines`**        | Limits how many lines of text to display.                       | `maxLines: 2`             |
+| **`overflow`**        | What to do when text overflows its space.                       | `TextOverflow.ellipsis`   |
+| **`softWrap`**        | Whether the text should break at soft line breaks.              | `softWrap: true`          |
+    |
+	
+Text-Style properties:
+
+
+| Property              | Type                  | Description                   | Example                      |
+| --------------------- | --------------------- | ----------------------------- | ---------------------------- |
+| **`color`**           | `Color`               | Text color                    | `Colors.red`                 |
+| **`fontSize`**        | `double`              | Size of the text              | `fontSize: 20`               |
+| **`fontWeight`**      | `FontWeight`          | Thickness of the text         | `FontWeight.bold`            |
+| **`fontStyle`**       | `FontStyle`           | Italic or normal              | `FontStyle.italic`           |
+| **`letterSpacing`**   | `double`              | Space between letters         | `letterSpacing: 2`           |
+| **`wordSpacing`**     | `double`              | Space between words           | `wordSpacing: 4`             |
+| **`decoration`**      | `TextDecoration`      | Underline, line-through, etc. | `TextDecoration.underline`   |
+| **`decorationColor`** | `Color`               | Color of text decoration      | `Colors.blue`                |
+| **`decorationStyle`** | `TextDecorationStyle` | Style of the decoration line  | `TextDecorationStyle.dashed` |
+| **`fontFamily`**      | `String`              | Name of the font family       | `'Roboto'`                   |
+| **`backgroundColor`** | `Color`               | Background color of text      | `Colors.yellow`              |
+| **`height`**          | `double`              | Line height (line spacing)    | `height: 1.5`                |
+
+
+Shadow-class Property:
+
+| Property         | Type     | Description                           |
+| ---------------- | -------- | ------------------------------------- |
+| **`offset`**     | `Offset` | Position of the shadow (x, y).        |
+| **`blurRadius`** | `double` | Amount of blur. More = softer shadow. |
+| **`color`**      | `Color`  | Color of the shadow.                  |
+
