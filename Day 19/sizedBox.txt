@@ -1,0 +1,161 @@
+///SizedBox using columns with ElevatedButton:
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_application/avatar.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      body: Column(children: [
+        ElevatedButton(onPressed: (){}, child: Text("Register")),
+        SizedBox(
+          height: 200,
+        ),
+        ElevatedButton(onPressed: (){}, child: Text("Login"))
+      ],),
+    ),
+    );
+  }
+}
+
+
+///SizedBox using rows with ElevatedButton
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_application/avatar.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      body: Row(children: [
+        ElevatedButton(onPressed: (){}, child: Text("Register")),
+        SizedBox(
+          width: 100,
+        ),
+        ElevatedButton(onPressed: (){}, child: Text("Login"))
+      ],),
+    ),
+    );
+  }
+}
+
+
+///SizedBox using constructor sizedBox.fromSize
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_application/avatar.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      body: SizedBox.fromSize(
+          size: Size(400, 200),
+          child: ElevatedButton(onPressed: (){}, child: Text("Register")))
+    ),
+    );
+  }
+}
+
+///Sizedbox using constrainedBox using expand
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_application/avatar.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      body: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxHeight: 200,
+          maxWidth: 400,
+          minHeight: 100,
+          minWidth: 150
+        ),
+
+        child: SizedBox.expand(
+
+            child: ElevatedButton(onPressed: (){}, child: Text("Register"))),
+      )
+    ),
+    );
+  }
+}
+
+///sizedbox using constrainedbox using shrink
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:my_application/avatar.dart';
+
+void main()
+{
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+      body: ConstrainedBox(
+        constraints: BoxConstraints(
+          maxHeight: 200,
+          maxWidth: 400,
+          minHeight: 100,
+          minWidth: 150
+        ),
+
+        child: SizedBox.shrink(
+
+            child: ElevatedButton(onPressed: (){}, child: Text("Register"))),
+      )
+    ),
+    );
+  }
+}
+
+
+
+

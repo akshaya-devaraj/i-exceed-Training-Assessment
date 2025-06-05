@@ -1,0 +1,71 @@
+SizedBox:
+
+To create an empty box with a fixed size, or to constrain the size of a child widget.
+
+Properties:
+
+| Property | Type      | Description                                                                  |
+| -------- | --------- | ---------------------------------------------------------------------------- |
+| `width`  | `double?` | Specifies the width of the box.                                              |
+| `height` | `double?` | Specifies the height of the box.                                             |
+| `child`  | `Widget?` | Optional child widget inside the box. The size constraints will apply to it. |
+| `key`    | `Key?`    | Optional identifier for the widget.                                          |
+
+
+use cases:
+
+ Use Case                                    
+1. Spacing between widgets (vertical/horizontal)
+2. Fixed-size container for a widget             
+3. Placeholder with no child                     
+4. Empty space (shrink)
+
+Note: Which can be used with constrainedBox to acheive the sizedBox properties 
+
+1. SizedBox.expand - Fills all available space.
+
+2.SixedBox.shrink - Zero width and height.
+
+3.SizedBox.fromSize - Creates a box with size taken from a Size object.
+
+
+Native_splash_screen:
+
+ In Flutter, a Splash Screen is the first screen that appears when your app launches. It usually shows your app’s logo, name, or branding, while the app is loading or initializing.
+ 
+ 
+ A Splash Screen is used to:
+
+Display branding (logo, name, animation)
+
+Provide a smoother UX while the app initializes
+
+Show progress or transition into the main app screen
+
+| Type               | When to Use                            | Setup                           |
+| ------------------ | -------------------------------------- | ------------------------------- |
+| **Native Splash**  | To show **immediately** at app startup | Use `flutter_native_splash`     |
+| **Flutter Splash** | For animated or delayed splash         | Dart UI with Timer or animation |
+
+Padding:
+
+Padding is a widget that insets its child by the amount you specify on each side: top, bottom, left, right.
+
+| Constructor              | Description                     | Example                                             |
+| ------------------------ | ------------------------------- | --------------------------------------------------- |
+| `EdgeInsets.all()`       | Same padding on all sides       | `EdgeInsets.all(10)`                                |
+| `EdgeInsets.symmetric()` | Vertical and horizontal padding | `EdgeInsets.symmetric(horizontal: 10, vertical: 5)` |
+| `EdgeInsets.only()`      | Set padding for specific sides  | `EdgeInsets.only(left: 10, top: 20)`                |
+| `EdgeInsets.fromLTRB()`  | Left, top, right, bottom        | `EdgeInsets.fromLTRB(10, 20, 30, 40)`               |
+
+
+Padding vs margin:
+
+| Property    | Purpose                                 | Flutter Equivalent             |
+| ----------- | --------------------------------------- | ------------------------------ |
+| **Padding** | Space **inside** the widget's boundary  | `Padding` widget               |
+| **Margin**  | Space **outside** the widget's boundary | Use `Container` with `margin:` |
+
+Note:
+
+Make sure the child is padded with padding widget
