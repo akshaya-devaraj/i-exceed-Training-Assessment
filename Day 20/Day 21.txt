@@ -1,0 +1,49 @@
+Images in Flutter:
+
+1. Asset
+2. Network
+3. File
+4. Memory
+
+Asset:
+
+Assest bundle is a collection of file,font, etc.
+Part of the application not from the internet
+Flutter build these bundles together 
+
+Asset Bundle:
+
+AssetBundle in Flutter acts like a centralized repository that stores all the static assets required by the application. 
+It allows users to bundle together the different types of media content like icons, images, audio files, fonts, JSON data, etc into a collection and access them when the app is run.
+
+The AssetBuilder not only makes the application development process smoother but also optimizes the application's performance. 
+It also enhances the user experience, making it visually more appealing and user-friendly.
+
+We can accessed using constructor or AssetClass(AssertImage)
+
+Asset has various properties:
+
+height,width,color,alignment,repeat  - ImageRepeat(repeatx,repearty,repeatNone)
+
+ErrorBuilder : it takes call back function it maintains the application to maintain or avoid error
+
+The Network image can also take the property of the assets images also
+
+Navigator:
+
+The Navigator widget is used to manage routes (i.e., screens/pages) in a stack-like manner. 
+It helps in navigating between different pages of the app — like pushing a new screen onto the stack or popping the current one off.
+
+| Method                           | Description                             |
+| -------------------------------- | --------------------------------------- |
+| `Navigator.push()`               | Navigate to a new route                 |
+| `Navigator.pop()`                | Go back to previous screen              |
+| `Navigator.pushReplacement()`    | Replace current screen with new         |
+| `Navigator.pushNamed()`          | Navigate using named routes             |
+| `Navigator.popUntil()`           | Pop multiple screens                    |
+| `Navigator.pushAndRemoveUntil()` | Push new and remove until condition met |
+
+
+
+
+
