@@ -1,0 +1,19 @@
+JSON:
+
+JSON (JavaScript Object Notation) is a lightweight data-interchange format that's easy for humans to read and write and easy for machines to parse and generate.
+
+🔍 What is JSON Parsing?
+JSON parsing means converting a JSON-formatted string into a language-specific data structure—like an object in JavaScript, a dictionary in Python, or a map in Java.
+
+Likewise, JSON serialization (or stringifying) is the reverse: turning a data object into a JSON string.
+
+🌐 Common Use Cases
+Sending/receiving data in APIs (especially REST APIs)
+
+Configuration files
+
+Persisting data in local storage or databases
+
+Inter-process communication
+
+
