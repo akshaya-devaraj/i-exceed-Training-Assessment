@@ -1,0 +1,35 @@
+✅ Steps to Make API Calls Using http in Flutter:
+Add http dependency in pubspec.yaml.
+
+Run flutter pub get to install the package.
+
+Import http and dart:convert in your Dart file.
+
+Define the API endpoint URL using Uri.parse().
+
+Use HTTP methods:
+
+http.get() for fetching data
+
+http.post() to send data
+
+http.put() to update/replace data
+
+http.patch() to update part of the data
+
+http.delete() to delete data
+
+Add headers (e.g., Content-Type) when needed, especially for POST/PUT requests.
+
+Use jsonDecode() to convert JSON string response to a Dart map.
+
+Use jsonEncode() to convert Dart map to a JSON string when sending data.
+
+Wrap API calls in try-catch blocks to handle exceptions and errors.
+
+Check response.statusCode to determine success or failure of the request.
+
+Use a data model to convert JSON data into Dart objects (recommended for structured data).
+
+Integrate with UI using FutureBuilder, state management, or controller callbacks.
+
