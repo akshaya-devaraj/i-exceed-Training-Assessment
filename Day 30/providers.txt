@@ -1,0 +1,39 @@
+State Mangaement through providers:
+
+A data that can change the lifetime of the widget
+
+Provider is a wrapper around InheritedWidget that makes state easier to manage and share across widgets.
+
+✅ ChangeNotifier
+A class used to store and manage data (state) in your app.
+It notifies listeners (widgets) when the data changes so the UI can update.
+
+Example use: Keeping track of a counter, login status, or product list.
+
+✅ ChangeNotifierProvider
+A widget that makes your ChangeNotifier available to all other widgets in the app.
+It allows the UI to listen to and rebuild when the state changes.
+
+Think of it like: A bridge that connects your data (from ChangeNotifier) to your UI.
+
+✅ Provider
+A simpler version of ChangeNotifierProvider.
+Used to share data with widgets but doesn't listen for changes.
+Useful for passing around constants or services like API clients.
+
+Think of it like: A one-way ticket to access data without needing to update the UI.
+
+✅ When to Use Provider
+Situation	Use Provider?
+Need to share state app-wide	✅ Yes
+Want to separate UI and logic	✅ Yes
+Have nested widgets needing state	✅ Yes
+Only local widget state needed	❌ No
+
+changeNotifier and changeNotifierProvider:
+
+✅ Summary Table
+Concept	Description	Rebuilds Widgets?	Used For
+ChangeNotifier	Holds state and notifies listeners	Yes	Business logic + state changes
+ChangeNotifierProvider	Injects ChangeNotifier to widget tree	Yes	Providing reactive state to widgets
+Provider	Base provider for read-only data	No	Static values or services (e.g., APIs)
