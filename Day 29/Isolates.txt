@@ -1,0 +1,40 @@
+Isolates:
+
+Dart is a single threaded languages.To over come this isolates are used using the messgae passing.
+
+An Isolate is Dart’s version of a thread — it has:
+
+Its own memory
+
+Its own event loop
+
+No shared state with other isolates
+
+Unlike threads in some languages, Dart does not support shared memory between isolates. Instead, isolates communicate via message passing (like SendPort / ReceivePort).
+
+isolate.spawn():
+
+Isolate.spawn() is a Dart method that creates a new isolate (i.e., a separate thread of execution) and runs a function in it.
+
+🧠 What Does spawn() Do?
+Creates a new isolate (like a lightweight thread)
+
+Runs a top-level or static function in that isolate
+
+Optionally passes a message (usually a SendPort) to that function
+
+Allows the spawned isolate to send messages back using SendPort
+
+✅ Benefits of Isolate.spawn()
+Parallel execution – utilizes multiple CPU cores
+
+UI stays smooth – isolates don't block the main isolate
+
+Full control – you manage ports, lifecycle, and communication
+
+Can run forever – good for background services or loops
+
+
+
+
+
