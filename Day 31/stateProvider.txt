@@ -1,0 +1,48 @@
+StateProvider is one of the simplest and most commonly used providers in Riverpod. It is used when you need to store and modify a piece of state (like a counter, a selected item, toggle switch, etc.).
+
+✅ Key Features:
+Holds mutable state of any type (e.g., int, String, bool, List, etc.)
+
+Automatically notifies and rebuilds widgets when the state changes
+
+Works well for simple reactive UI logic
+
+Can be used with ref.watch() to react to changes
+
+Can be used with ref.read() or ref to update the state
+
+🧰 Methods / Access Options
+1. Access the current value (read-only)
+dart
+Copy
+Edit
+final value = ref.watch(myStateProvider);
+Reactively listens for state changes.
+
+Rebuilds the widget when the value changes.
+
+2. Access the state controller (for updating)
+dart
+Copy
+Edit
+final controller = ref.read(myStateProvider.notifier);
+Gives access to the StateController<T> object.
+
+Use it to update the state.
+
+3. Get current state from the controller
+dart
+Copy
+Edit
+final value = ref.read(myStateProvider.notifier).state;
+4. Update the state
+dart
+Copy
+Edit
+ref.read(myStateProvider.notifier).state = newValue;
+5. Modify the state
+dart
+Copy
+Edit
+ref.read(myStateProvider.notifier).state++;
+ref.read(myStateProvider.notifier).state += 5;
