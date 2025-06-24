@@ -1,0 +1,74 @@
+Riverpod:
+
+Riverpod is a state management and dependency injection library for Flutter and Dart, known for its reactivity, caching, and ability to handle asynchronous operations. 
+
+It builds upon the Provider package, offering improvements in areas like scoped providers, asynchronous initialization, and dependency injection. 
+In essence, Riverpod simplifies state management by providing a declarative and reactive approach, making it easier to manage data flow and dependencies within Flutter applications. 
+
+
+🛡️ ProviderScope
+A widget that stores the state of all providers.
+
+It must wrap your entire app (usually at the root in main.dart).
+
+It acts as a container that holds and manages the state of all registered providers.
+
+
+🧾 Provider
+The most basic type of provider in Riverpod.
+
+Used to expose read-only values or logic, like configuration or computed values.
+
+The value is lazily evaluated and cached until no longer used.
+
+🧾 Consumer
+A widget that gives access to the ref object (used to read or watch providers).
+
+It allows you to selectively rebuild only the part of the widget tree where it’s placed.
+
+Useful inside regular StatelessWidget or StatefulWidget when you want only a section to react to provider changes.
+
+🧾 ConsumerWidget
+A special type of StatelessWidget that injects WidgetRef directly into the build method.
+
+Simplifies access to providers throughout the entire widget.
+
+Use this instead of a regular StatelessWidget when you want full widget rebuilds on provider changes.
+
+🧾 ConsumerStatefulWidget
+Similar to a StatefulWidget, but allows access to WidgetRef through the ConsumerState class.
+
+Ideal when you need stateful logic (e.g., animations, lifecycle hooks) and access to Riverpod providers.
+
+Combines the power of local state + global state management.
+
+In Riverpod, the watch and read methods are used to access providers via the WidgetRef or Ref object. They serve different purposes based on how and when you want to interact with the provider.
+
+👁️ watch
+🔹 Purpose:
+Subscribes to the provider and listens for changes.
+
+Automatically rebuilds the widget when the provider’s value changes.
+
+✅ When to Use:
+Inside Consumer, ConsumerWidget, or ConsumerStatefulWidget.
+
+🧠 Behavior:
+Reactive: Rebuilds the widget when the watched provider updates.
+
+
+final count = ref.watch(counterProvider);
+
+🔹 Purpose:
+Reads the current value of the provider without listening for changes.
+
+The widget won’t rebuild when the value changes.
+
+✅ When to Use:
+For one-time reads (e.g., in event handlers, initState, or on button press).
+
+Inside callbacks or lifecycle methods where listening isn't needed.
+
+🧠 Behavior:
+Non-reactive: No rebuild on value change.
+
